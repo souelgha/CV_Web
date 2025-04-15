@@ -39,6 +39,7 @@ body{
     letter-spacing: 1px;
     
 }
+
 .skills, .language{
     color: white;
     padding: 45px;
@@ -73,6 +74,7 @@ h2{
     font-weight:bold;
     position: relative;
 }
+/* ajout du trit des rubriques a l aide  de span */
 .right-content h2 span{
     position: absolute;
     width: 100%;
@@ -111,15 +113,16 @@ h2{
     width: 100px;
    float: left;
 }
+/* style de la ligne de chronologie */
 .progressbar:before{
     content: "";
     display: inline-block;
     width: 3px;
     background: black;
     position: absolute;
-    left: -13px;
+    left: -10px;
     top: 10px;
-    height: 250px;
+    height: 200px;
 
 
 }
@@ -128,12 +131,13 @@ h2{
     margin-bottom: 15px;
     padding-left: 30px;
 }
+/* style avec cercle type chronologique */
 .progressbar li:before{
     content: "";
     display: inline-block;
     background: white;
     position: absolute;
-    left: -9px;
+    left: -20px;
     top: 5px;
     border-radius: 20px;
     width: 22px;
@@ -144,6 +148,33 @@ h2{
     padding-top: 5px;
     margin-top: 5px;
     margin-bottom: 5px;
+}
+.p2{
+    font-size: 12px;
+    padding-left: 20px;
+    color:gray;
+    position:relative;
+    margin-top: 5px;
+    margin-bottom: 7px;
+}
+/* style avec puce paragraphe */
+.p2:after{
+    content: '';
+    display: inline-block;
+    background: black;
+    position: absolute;
+    left: 2px;
+    top: 5px;
+    border-radius: 10px;
+    width: 5px;
+    height: 5px;
+}
+.calp{
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-top: 5px;
+   
 }
 
 
